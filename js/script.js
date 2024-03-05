@@ -6,7 +6,10 @@
 // L'output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo). 
 
 
-// Chiediamo all'utente il numero di km (prompt)
+// Chiediamo all'utente il numero di km (prompt numerico)
+const userKm = parseInt (prompt('Quanti km devi fare?'));
+console.log(userKm);
+
 // Chiediamo all'utente la sua età (prompt numerico)
 // Calcolo matematico in base ai km (0.21 * km)
 // Calcolo della percentuale del 20%
