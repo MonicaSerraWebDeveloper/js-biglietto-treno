@@ -4,8 +4,11 @@ const userKm = parseInt (prompt('Quanti km devi fare?'));
 // Chiediamo all'utente la sua età (prompt numerico)
 const userAge = parseInt (prompt('Quanti anni hai?'));
 
+// Variabile del numero per calcolare il prezzo al km
+const numberToCalculateKm = 0.21;
+
 // Calcolo matematico in base ai km (0.21 * km)
-const priceTrip = userKm * 0.21;
+const priceTrip = userKm * numberToCalculateKm;
 
 // Calcolo della percentuale del 20%
 const discountTwenty = (priceTrip * 20) / 100;
