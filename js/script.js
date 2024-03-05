@@ -44,7 +44,36 @@ let priceTotalTwoDecimal = parseFloat (priceTicketTotal.toFixed(2));
 console.log(priceTotalTwoDecimal);
 
 // Stampiamo nella pagina HTML il prezzo finale con due decimali
-const messageTotalPrice = `Il prezzo del tuo biglietto è: € ${priceTotalTwoDecimal}`;
+const messageTotalPrice = `Il prezzo del tuo biglietto è: €${priceTotalTwoDecimal}`;
 
 document.getElementById('total-price').innerHTML = messageTotalPrice;
 
+// AGGIUNTA EXTRA
+
+// Avviso all'utente dello sconto o solo benvenuto
+let titleTicket = 'Benvenut* in carrozza';
+
+if (userAge < 18) {
+    titleTicket = 'Hai uno sconto del 20%'
+} else if (userAge >= 65) {
+    titleTicket = 'Hai uno sconto del 40%'
+};
+
+document.getElementById('discount-title').innerHTML = titleTicket;
+
+// Info solo a chi ha lo sconto del prezzo normale sbarrato
+
+let textBeforeRegularPrice = '';
+
+if (userAge < 18 || userAge >= 65) {
+    textBeforeRegularPrice = 'Prezzo normale: '
+};
+
+let oldPrice = '';
+
+if (userAge < 18 || userAge >= 65) {
+    oldPrice = `€${priceTrip}`
+};
+
+document.getElementById('text-before-old-price').innerHTML = textBeforeRegularPrice;
+document.getElementById('old-price').innerHTML = oldPrice;

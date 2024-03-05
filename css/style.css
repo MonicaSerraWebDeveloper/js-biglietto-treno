@@ -26,7 +26,11 @@ main {
 }
 
 img {
-    max-width: 50%;
+    max-width: 40%;
+}
+
+h3 {
+    font-weight: 300;
 }
 
 /*-------------------
@@ -39,7 +43,23 @@ img {
     justify-content: center;
     align-items: center;
     background-color: #fff;
-    padding: 30px;
-    border-radius: 20px;
+    padding: 50px 20px;
+    border-radius: 30px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+}
+
+/*-------------------
+        TITLE
+---------------------*/
+
+.old-price-container {
+    display: flex;
+}
+
+#old-price {
+    text-decoration: line-through;
+}
+
+#total-price {
+    color: #4a9ec1;
 }
