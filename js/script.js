@@ -14,8 +14,11 @@ console.log(userKm);
 const userAge = parseInt (prompt('Quanti anni hai?'));
 console.log(userAge);
 
-
 // Calcolo matematico in base ai km (0.21 * km)
+const priceTrip = userKm * 0.21;
+console.log(priceTrip);
+
+
 // Calcolo della percentuale del 20%
 // Calcolo della percentuale del 40%
 // Definizione della condizione per le percentuali in base all'età
