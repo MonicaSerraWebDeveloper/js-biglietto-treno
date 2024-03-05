@@ -11,6 +11,10 @@ const userKm = parseInt (prompt('Quanti km devi fare?'));
 console.log(userKm);
 
 // Chiediamo all'utente la sua età (prompt numerico)
+const userAge = parseInt (prompt('Quanti anni hai?'));
+console.log(userAge);
+
+
 // Calcolo matematico in base ai km (0.21 * km)
 // Calcolo della percentuale del 20%
 // Calcolo della percentuale del 40%
