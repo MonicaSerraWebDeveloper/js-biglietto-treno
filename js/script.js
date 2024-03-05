@@ -43,3 +43,8 @@ if (userAge < 18) {
 let priceTotalTwoDecimal = parseFloat (priceTicketTotal.toFixed(2));
 console.log(priceTotalTwoDecimal);
 
+// Stampiamo nella pagina HTML il prezzo finale con due decimali
+const messageTotalPrice = `Il prezzo del tuo biglietto è: € ${priceTotalTwoDecimal}`;
+
+document.getElementById('total-price').innerHTML = messageTotalPrice;
+
