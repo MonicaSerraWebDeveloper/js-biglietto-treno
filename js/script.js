@@ -18,8 +18,13 @@ console.log(userAge);
 const priceTrip = userKm * 0.21;
 console.log(priceTrip);
 
-
 // Calcolo della percentuale del 20%
+const discountTwenty = (priceTrip * 20) / 100;
+console.log(discountTwenty);
+
+const applyDiscountTwenty = priceTrip - discountTwenty;
+console.log(applyDiscountTwenty);
+
 // Calcolo della percentuale del 40%
 // Definizione della condizione per le percentuali in base all'età
 // Prezzo totale del biglietto finale con massimo due decimali
