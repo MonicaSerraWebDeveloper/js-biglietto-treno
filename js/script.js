@@ -33,7 +33,15 @@ const applyDiscountForthy = priceTrip - discountForthy;
 // console.log(applyDiscountForthy);
 
 // Definizione della condizione per le percentuali in base all'età
+let priceTicketTotal = priceTrip
 
+if (userAge < 18) {
+    priceTicketTotal = applyDiscountTwenty
+} else if (userAge >= 65) {
+    priceTicketTotal = applyDiscountForthy
+};
+
+console.log(priceTicketTotal);
 
 
 // Prezzo totale del biglietto finale con massimo due decimali
